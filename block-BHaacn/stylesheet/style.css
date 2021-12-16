@@ -1,0 +1,382 @@
+:root {
+    --primary: #E9404A;
+    --secondary: #6A6970;
+    --headings: #01122D;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* general styles */
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 500px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+ border: 0;
+ outline: 0;
+ border-radius: 4px;
+}
+
+/* flex */
+
+.flex{
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.item-start {
+    align-items: flex-start;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction:  column;
+}
+
+/* columns */
+
+.flex-15 {
+    flex: 0 1 15%;
+}
+
+.flex-20{
+    flex: 0 1 20%;
+} 
+
+.flex-25{
+    flex: 0 1 25%;
+} 
+
+.flex-30{
+    flex: 0 1 30%;
+} 
+
+.flex-40{
+    flex: 0 1 40%;
+} 
+
+.flex-45 {
+    flex: 0 1 45%;
+}
+
+
+.flex-50{
+    flex: 0 1 50%;
+} 
+
+.flex-48{
+    flex: 0 1 48%;
+} 
+
+.grow {
+    flex:  1 1 auto;
+}
+
+/* width */
+
+.width-full {
+    width: 100%;
+}
+
+/* center */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* buttons */
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 480;
+    font-size: 1.1rem;
+    transition: all 200ms ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    opacity: 0.8;
+}
+
+/* text */
+
+.sub-heading {
+    font-size: 2.8rem;
+    color: var(--headings);
+    font-weight: 800;
+}
+
+.sub-para {
+    color: var(--secondary);
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+.text-center {
+    text-align:  center;
+}
+
+.font-0 {
+    font-size: 0;
+}
+
+
+/* header  */
+
+.header {
+    padding: 1rem 0;
+    position: relative;
+    z-index: 999;
+}
+
+.header a {
+    color: white;
+}
+
+.header .brand {
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.first-nav li {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+
+
+/* developer-conference */
+
+.overlay {
+    background:  linear-gradient(rgba(55,52,181,0.8),rgba(57,48,168,0.8)), url(../assets/banner.png);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 7rem 0 4.6rem 0;
+    color: white;
+}
+
+
+
+.relative {
+    position: relative;
+}
+
+.section-conference {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+
+
+
+h1 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.9rem;
+}
+
+h1 span {
+    color: var(--primary);
+}
+
+.overlay p {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+
+/* section-event */
+
+.section-event {
+    padding-top: 700px;
+    padding-bottom: 60px;
+}
+
+.section-event h2 {
+    margin-bottom: 1rem;
+}
+
+.section-event .sub-para {
+    margin: 0.6rem 0 1rem 0;
+}
+
+/* join-section */
+
+.join-section {
+    background-color: #DFECFE;
+    padding: 3rem 0;
+}
+
+.join-section h4 {
+    font-size: 2rem;
+}
+
+.join-section p {
+    font-size: 1.18rem;
+}
+
+.one-two {
+    border: 2px dashed var(--primary);
+    padding: 1rem;
+    border-width: 3px;
+    position: relative;
+    font-size: 2rem;
+}
+
+.one {
+    color: var(--primary);
+    position: absolute;
+    padding: 0.2rem;
+    background-color: #DFECFE;
+    left: 0.9rem;
+    top:  -1.80rem;
+}
+
+.join-section article {
+    margin-top: 3rem;
+}
+
+/* schedule section */
+.digital {
+    margin-top: 2.5rem;
+}
+
+
+.circle {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.line {
+    border-left: 3px dashed var(--primary);
+    width: 0;
+    margin-left: 4.6rem;
+}
+
+.schedule-section img {
+  border-radius: 7px;
+}
+
+.schedule-section {
+    padding: 4rem 0;
+}
+
+.schedule-section .h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.convo .circle {
+    background-color: white;
+    color: var(--primary);
+    border: 2px dashed var(--primary);
+}
+
+.schedule-section .btn {
+    margin-top: 2rem;
+}
+
+.convo {
+    margin-top: 2rem;
+}
